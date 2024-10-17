@@ -35,4 +35,9 @@ router.get('/users', async (req, res) => {
   }
 });
 
+router.get('/status', (req, res) => {
+  res.status(200).json({ message: 'API en funcionamiento' });
+});
+
+
 module.exports = router;
